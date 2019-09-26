@@ -106,7 +106,7 @@ export default function Checkout() {
 							Your order number is #2001539. We have emailed your order confirmation!
               </Typography>
               <Link to='/'>
-              <Button onClick={handleFinish}>Go back to home page</Button>
+              <Button style={{display:'block', margin:'auto'}} onClick={handleFinish}>Go back to home page</Button>
               </Link>
               </React.Fragment>
 						) : (

@@ -62,9 +62,11 @@ const Home = (props) => {
                 </Link>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Checkout
-                  </Button>
+                  <Link to="cart">
+                    <Button variant="outlined" color="primary">
+                      Checkout
+                   </Button>
+                  </Link>
                 </Grid>
               </Grid>
             </div>

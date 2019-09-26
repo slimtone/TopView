@@ -28,10 +28,12 @@ const useStyles = makeStyles(theme => ({
 export default function Cart() {
 	const classes = useStyles();
 	const [cart, setCart] = useContext(CartContext);
+
 	let totalPrice = 0;
 	let totalItems = 0;
 	let isValid = false;
 	let bikeCount = 0;
+
 	cart.map(product => {
 		totalPrice = totalPrice + product.price * product.quantity;
 		totalItems = totalItems + product.quantity;
@@ -46,7 +48,9 @@ export default function Cart() {
       <List disablePadding>
         {cart.map(product => (
           <ListItem className={classes.listItem} key={product.name}>
-            <ListItemText primary={`${product.name} x ${product.quantity}`} secondary={product.product_type} />
+						<ListItemText primary={`${product.name} x ${product.quantity}`} secondary={product.product_type} />
+						<ListItemText>
+			``</ListItemText>
             <Typography variant="body2">{`$${product.price.toFixed(2)}`}</Typography>
 					</ListItem>
 					))}
