@@ -50,7 +50,7 @@ export default function Cart() {
           <ListItem className={classes.listItem} key={product.name}>
 						<ListItemText primary={`${product.name} x ${product.quantity}`} secondary={product.product_type} />
 						<ListItemText>
-			``</ListItemText>
+			</ListItemText>
             <Typography variant="body2">{`$${product.price.toFixed(2)}`}</Typography>
 					</ListItem>
 					))}
